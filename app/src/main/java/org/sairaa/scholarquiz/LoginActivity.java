@@ -42,7 +42,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.signin_login:
                 BackgroundLoginTask backgroundLoginTask = new BackgroundLoginTask(LoginActivity.this);
-                backgroundLoginTask.execute("login", emailEditText.getText().toString(), passwordEditText.getText().toString());
+                backgroundLoginTask.execute(getString(R.string.LOGIN_METHOD), emailEditText.getText().toString(), passwordEditText.getText().toString());
                 break;
             default:
         }
